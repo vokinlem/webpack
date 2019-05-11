@@ -14,5 +14,7 @@
 *.sqlite
 
 node_modules
+dist
+
 .idea
 .sass-cache
