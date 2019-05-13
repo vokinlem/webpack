@@ -7,13 +7,15 @@ module.exports = function(env, args) {
     return {
         context: path.resolve(__dirname, './'),
         entry: {
-            module1: './module-1.js'
+            moduleTs: './module.ts'
         },
         output: {
             path: path.resolve(__dirname, './dist'),
             filename: '[name].bundle.js'
         },
-
+        resolve: {
+            extensions: ['.ts', '.tsx', '.js']
+        },
         module: {
             rules: [
                 {
@@ -28,6 +30,10 @@ module.exports = function(env, args) {
                 {
                     test: /\.html$/,
                     use: ['html-loader']
+                },
+                {
+                    test: /\.ts$/,
+                    use: 'ts-loader'
                 }
             ]
         },

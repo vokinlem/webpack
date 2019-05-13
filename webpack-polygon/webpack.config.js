@@ -10,5 +10,5 @@ module.exports = function(env, args) {
         throw new Error('Config "' + configFileName + '" is not existed in "' + __dirname + '"');
     }
 
-    return require('./'+configFileName);
+    return require('./'+configFileName)(env, args);
 };
