@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "ES6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "./dist-typescript",
+        "target": "ES3",
+        "moduleResolution": "node"
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules"]
+}
